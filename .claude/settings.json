@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:code-jump.com)",
+      "Edit(~/.claude/skills/auto-kanpu/**)"
+    ]
+  }
+}
