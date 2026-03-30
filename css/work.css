@@ -34,6 +34,7 @@
 
 .header_item {
 }
+
 .header_link {
   color: black;
   font-size: 1.4rem;
@@ -41,5 +42,13 @@
 
 /* お問い合わせ */
 .header_button {
-    と
+  display: block;
+  width: 14rem;
+  height: 100%;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
