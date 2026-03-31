@@ -28,25 +28,43 @@
       <section class="lineup_area">
         <h2 class="lineup_title">News & Press</h2>
         <p class="lineup_subTitle">ニュースとプレスリリース</p>
-        <!-- 【flex】ニュース一覧を縦に並べる -->
-        <div>
-          <ul class="lineup_list">
-            <li class="lineup_item">
-              <time datetime="2024-06-01" class="lineup_date">2024.06.01</time>
-              <span class="lineup_category">NEWS</span>
-              <p class="lineup_text">タイトルタイトルタイトルタイトル</p>
-            </li>
-            <li class="lineup_item">
-              <time datetime="2024-05-15" class="lineup_date">2024.05.15</time>
-              <span class="lineup_category">PRESS</span>
-              <p class="lineup_text">タイトルタイトルタイトルタイトル</p>
-            </li>
-            <li class="lineup_item">
-              <time datetime="2024-04-30" class="lineup_date">2024.04.30</time>
-              <span class="lineup_category">NEWS</span>
-              <p class="lineup_text">タイトルタイトルタイトルタイトル</p>
-            </li>
-          </ul>
+
+        <!-- 移動タブの移動(アニメーション) -->
+        <div class="tab_wrapper">
+          <!-- タブボタン -->
+          <div class="tab_list">
+            <button class="tab_btn is-active" data-tab="news">ニュース</button>
+            <button class="tab_btn" data-tab="press">プレスリリース</button>
+            <!-- 動く線 -->
+            <span class="tab_line"></span>
+          </div>
+
+          <!-- コンテンツ -->
+          <div class="tab_content is-show" data-content="news">
+            <!-- 【flex】ニュース一覧を縦に並べる -->
+            <div>
+              <ul class="lineup_list">
+                <li class="lineup_item">
+                  <time datetime="2024-06-01" class="lineup_date">2024.06.01</time>
+                  <span class="lineup_category">NEWS</span>
+                  <p class="lineup_text">タイトルタイトルタイトルタイトル</p>
+                </li>
+                <li class="lineup_item">
+                  <time datetime="2024-05-15" class="lineup_date">2024.05.15</time>
+                  <span class="lineup_category">PRESS</span>
+                  <p class="lineup_text">タイトルタイトルタイトルタイトル</p>
+                </li>
+                <li class="lineup_item">
+                  <time datetime="2024-04-30" class="lineup_date">2024.04.30</time>
+                  <span class="lineup_category">NEWS</span>
+                  <p class="lineup_text">タイトルタイトルタイトルタイトル</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab_content" data-content="press">
+            <p>プレスリリースの内容</p>
+          </div>
         </div>
       </section>
     </main>
@@ -60,5 +78,6 @@
       </div>
       <p class="copyright">© 2024 株式会社階段式. All rights reserved.</p>
     </footer>
+    <script src="js/work.js"></script>
   </body>
 </html>

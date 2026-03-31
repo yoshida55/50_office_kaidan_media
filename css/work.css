@@ -330,31 +330,74 @@
   height: 70rem;
   padding-top: 10rem;
   padding-left: 20rem;
+  padding-right: 20rem;
 }
 
 .lineup_title {
   font-size: 3.6rem;
 }
 
-.lineup_subTitle{
-  
+.lineup_subTitle {
 }
 /* 【flex】ニュース一覧を縦に並べる */
 
 .lineup_list {
+  margin-top: 3rem;
+
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
 
 .lineup_item {
+  font-size: 1.5rem;
+  height: 6rem;
+  border-bottom: 0.1rem solid grey;
 }
 
 .lineup_date {
 }
 
 .lineup_category {
+  margin-left: 2rem;
+  background-color: black;
+  color: white;
 }
 
 .lineup_text {
+}
+/* ┌─────────────────────────────────────────┐
+   │ タブ遷移（アニメーション）                       │
+   └─────────────────────────────────────────┘ */
+.tab_list {
+  position: relative; /* ← 線の基準点にする */
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab_btn {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* 動く線 */
+.tab_line {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background: #000;
+  transition:
+    left 0.3s ease,
+    width 0.3s ease; /* ← これが「スライド」の正体 */
+}
+
+/* 非表示のコンテンツ */
+.tab_content {
+  display: none;
+}
+.tab_content.is-show {
+  display: block;
 }
