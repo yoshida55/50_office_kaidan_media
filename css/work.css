@@ -76,10 +76,22 @@
   margin: 0 auto;
 }
 
-.title {
+.news_flex {
   margin-top: 13rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.title_main {
   font-size: 3.6rem;
   letter-spacing: 1.08rem;
+}
+
+.news_lineUp {
+  text-decoration: underline;
 }
 
 /* サブタイトル・ニュース */
@@ -89,6 +101,14 @@
   margin-bottom: 8em;
 
   position: relative;
+}
+
+.news_line {
+  padding-left: 2rem;
+  width: 3rem;
+  height: 0.1rem;
+  background-color: black;
+  border: 0.5rem solid red;
 }
 
 .subTitle::before {
@@ -150,6 +170,11 @@
   justify-content: flex-start;
   gap: 7rem;
   margin-bottom: 13.4rem;
+}
+.title {
+  margin-top: 13rem;
+  font-size: 3.6rem;
+  letter-spacing: 1.08rem;
 }
 
 .about_area img {
@@ -295,4 +320,41 @@
   color: #000000;
   line-height: 2;
   padding-bottom: 2.2rem;
+}
+
+/* ┌─────────────────────────────────────────┐
+   │ ラインナップ                        │
+   └─────────────────────────────────────────┘ */
+
+.lineup_area {
+  height: 70rem;
+  padding-top: 10rem;
+  padding-left: 20rem;
+}
+
+.lineup_title {
+  font-size: 3.6rem;
+}
+
+.lineup_subTitle{
+  
+}
+/* 【flex】ニュース一覧を縦に並べる */
+
+.lineup_list {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.lineup_item {
+}
+
+.lineup_date {
+}
+
+.lineup_category {
+}
+
+.lineup_text {
 }
