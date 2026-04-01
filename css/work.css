@@ -464,8 +464,7 @@
 
   .news_area {
     width: 100%;
-    padding: 0cm;
-    padding: var(--sp-side-width);
+    padding: 0rem var(--sp-side-width);
     height: 58.6rem;
     margin: 0 auto;
     padding-top: 9rem;
@@ -608,8 +607,8 @@
 
   .business_list {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: column;
+    flex-wrap: none;
     margin-top: 0rem;
     column-gap: 6.4rem;
     row-gap: 8rem;
