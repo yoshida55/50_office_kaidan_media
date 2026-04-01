@@ -184,8 +184,9 @@
 }
 
 .about_textArea {
+  padding: 5rem var(--sp-side-width);
   padding-top: 5rem;
-  width: 47.3rem;
+  width: 100%;
 }
 
 .about_textArea p {
@@ -240,7 +241,7 @@
 .company_area {
   width: calc(100% - var(--side-width) * 2);
   margin: 0 auto;
-  padding-bottom: 11rem;
+  padding-bottom: 0rem;
 }
 
 .company_info {
@@ -400,4 +401,333 @@
 }
 .tab_content.is-show {
   display: block;
+}
+
+/* ┌─────────────────────────────────────────┐
+   │ レスポンシブ                        │
+   └─────────────────────────────────────────┘ */
+
+@media screen and (max-width: 76.8rem) {
+  :root {
+    color: black;
+    background-color: #f0f0f0;
+    --header-height: 8rem;
+    --sp-side-width: 1.6rem;
+    font-family: Meiryo, sans-serif;
+  }
+
+  /* ┌─────────────────────────────────────────┐
+   │ header                        │
+   └─────────────────────────────────────────┘ */
+
+  .header_area {
+    height: var(--header-height);
+    width: 100%;
+    padding-top: 1.6rem;
+    padding-left: var(--sp-side-width);
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+    flex-wrap: wrap;
+  }
+
+  .header_logo {
+    width: 10rem;
+    height: 2.1rem;
+    margin-right: 6rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .header_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .header_link {
+    color: black;
+    font-size: 1.4rem;
+  }
+
+  /* お問い合わせ */
+  .header_button {
+    display: none;
+  }
+
+  /* ┌─────────────────────────────────────────┐
+   │ ニュースエリア                       　　 │
+   └─────────────────────────────────────────┘ */
+
+  .news_area {
+    width: 100%;
+    padding: 0cm;
+    padding: var(--sp-side-width);
+    height: 58.6rem;
+    margin: 0 auto;
+    padding-top: 9rem;
+  }
+
+  .news_flex {
+    margin-top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .title_main {
+    font-size: 3.6rem;
+    letter-spacing: 1.08rem;
+  }
+
+  .news_lineUp {
+    text-decoration: underline;
+  }
+
+  /* サブタイトル・ニュース */
+  .subTitle {
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 6rem;
+
+    position: relative;
+  }
+
+  .news_line {
+    padding-left: 2rem;
+    width: 3rem;
+    height: 0.1rem;
+    background-color: black;
+    border: 0.5rem solid red;
+  }
+
+  .subTitle::before {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 0;
+
+    width: 4rem;
+    height: 0.1rem;
+    background-color: black;
+  }
+
+  .news_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .news_item {
+    flex: 1;
+    border-right: 0rem;
+  }
+
+  .news_link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .news_date {
+    font-size: 1.4rem;
+    color: gray;
+  }
+
+  .news_category {
+    display: inline-block;
+    margin: 0 0 1rem 2rem;
+
+    background-color: black;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  .news_text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: black;
+  }
+
+  /* ┌─────────────────────────────────────────┐
+   │ ABOUTエリア                        │
+   └─────────────────────────────────────────┘ */
+
+  .about_area {
+    width: 100%;
+    padding-right: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4rem;
+    margin-bottom: 13.4rem;
+  }
+
+  .about_img {
+    width: 100%;
+    height: 30rem;
+  }
+  .title {
+    margin-top: 0rem;
+    font-size: 3.6rem;
+    letter-spacing: 1.08rem;
+  }
+
+  .about_area img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+  }
+
+  .about_textArea {
+    padding-top: 0rem;
+    width: 100%;
+  }
+
+  .about_textArea p {
+    font-size: 1.4rem;
+    line-height: 2.2;
+  }
+
+  /* ┌─────────────────────────────────────────┐
+   │ Businessエリア                        │
+   └─────────────────────────────────────────┘ */
+
+  .business_area {
+    width: 100%;
+    padding: 0 var(--sp-side-width);
+    margin: 0 auto;
+    margin-bottom: 0rem;
+  }
+
+  .business_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0rem;
+    column-gap: 6.4rem;
+    row-gap: 8rem;
+  }
+
+  .business_item {
+    width: 36.8rem;
+    height: 23.2rem;
+  }
+
+  .business_item:nth-child(1),
+  .business_item:nth-child(3) {
+    padding-top: 0;
+  }
+
+  .business_name {
+    font-size: 1.4rem;
+
+    line-height: 1.71;
+  }
+
+  .business_img {
+    width: 36.8rem;
+    height: 23.2rem;
+    object-fit: cover;
+  }
+
+  /* ┌─────────────────────────────────────────┐
+   │ COMPANY                     │
+   └─────────────────────────────────────────┘ */
+  .company_area {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-right: var(--sp-side-width);
+    padding-left: var(--sp-side-width);
+    padding-bottom: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .company_info {
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+    padding-left: 0;
+
+    position: static;
+  }
+
+  .company_area .title {
+    padding-top: 5rem;
+  }
+
+  .company_wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+    row-gap: 1.7rem;
+    font-size: 1.4rem;
+  }
+
+  .company_title {
+    width: 20%;
+  }
+  .company_detail {
+    width: 80%;
+  }
+
+  .company_img {
+    width: 34.1rem;
+    height: 40rem;
+
+    position: static;
+    transform: translate(0);
+
+    transform: 0rem;
+    right: 0rem;
+  }
+
+  /* ┌─────────────────────────────────────────┐
+   │ フッター                        │
+   └─────────────────────────────────────────┘ */
+
+  .footer_area {
+    width: 100%;
+    padding: 4rem var(--sp-side-width) 0;
+    background-color: white;
+  }
+
+  .footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: conter;
+    align-items: flex-start;
+
+    gap: 1.4rem;
+
+    margin-bottom: 3.3rem;
+  }
+
+  .footer_logo {
+    width: 10.1rem;
+    height: 2.6rem;
+  }
+
+  .footer_text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #000000;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    color: #000000;
+    line-height: 2;
+    padding-bottom: 2.2rem;
+  }
 }
