@@ -1,0 +1,52 @@
+{
+  "section": "全体",
+  "device": "PC",
+  "records": [
+    {
+      "label": "画像_mainvisual_1260x590",
+      "device": "PC",
+      "section": "全体",
+      "w": "1260px",
+      "h": "590px",
+      "x": "70px",
+      "y": "60px",
+      "textContent": "",
+      "textSize": "",
+      "textFamily": "",
+      "letterSpacing": "",
+      "lineHeight": "",
+      "color": "",
+      "opacity": "100%",
+      "css": "top: 60px;left: 70px;width: 1260px;height: 590px;",
+      "shapeHeading": "画像 : mainvisual",
+      "distanceToRight": "70.0px",
+      "distanceToLeft": "70.0px",
+      "distanceToTop": "60.0px",
+      "distanceToBottom": "1250.0px",
+      "timestamp": "2026-04-03T19:40:36.064Z"
+    },
+    {
+      "label": "画像_concept_482x482",
+      "device": "PC",
+      "section": "全体",
+      "w": "482px",
+      "h": "482px",
+      "x": "218px",
+      "y": "760px",
+      "textContent": "",
+      "textSize": "",
+      "textFamily": "",
+      "letterSpacing": "",
+      "lineHeight": "",
+      "color": "",
+      "opacity": "100%",
+      "css": "top: 760px;left: 218px;width: 482px;height: 482px;",
+      "shapeHeading": "画像 : concept",
+      "distanceToRight": "700.0px",
+      "distanceToLeft": "218.0px",
+      "distanceToTop": "760.0px",
+      "distanceToBottom": "658.0px",
+      "timestamp": "2026-04-03T19:40:37.846Z"
+    }
+  ]
+}
